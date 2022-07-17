@@ -36,36 +36,37 @@ Chat Application is a Full Stack Chatting App. Uses Socket.io for real time comm
 
 ### Authenticaton
 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/login.PNG)
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/signup.PNG)
+![](https://user-images.githubusercontent.com/97354079/179385767-f695ab8b-1a45-4277-93c9-346ee21259c0.png)
+![](https://user-images.githubusercontent.com/97354079/179385796-de190fc1-c8c4-42d9-a88d-d665b067f5a7.png)
+
 
 ### Real Time Chatting with Typing indicators
 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/real-time.PNG)
+![](https://user-images.githubusercontent.com/97354079/179386022-c29f2c4b-e48d-4f91-bf9c-9fc373ec6fa3.png)
 
 ### One to One chat
 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/mainscreen.PNG)
+![](https://user-images.githubusercontent.com/97354079/179386108-31f651f8-29de-4a16-8793-dc33276fae19.png)
 
 ### Search Users
 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/search.PNG)
+![](https://user-images.githubusercontent.com/97354079/179386138-e81d0ce3-08d6-4708-8711-f228dd36e9eb.png)
 
 ### Create Group Chats
 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/new%20grp.PNG)
+![](https://user-images.githubusercontent.com/97354079/179386200-fcb2e536-a117-4ecc-b8be-bf6f9ad5e96f.png)
 
 ### Notifications
 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/group%20%2B%20notif.PNG)
+![](https://user-images.githubusercontent.com/97354079/179386243-b5e8e59d-eab3-4e12-9a66-8ea29c2b72a3.png)
 
 ### Add or Remove users from group
 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/add%20rem.PNG)
+![](https://user-images.githubusercontent.com/97354079/179386306-84f77a3f-47a1-4812-a596-3cd235dbeda1.png)
 
 ### View Other user Profile
 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/profile.PNG)
+![](https://user-images.githubusercontent.com/97354079/179386471-34fb65ab-4c2a-4dbc-9c45-3a84f9e72254.png)
 
 
 ## Deployement For Client
@@ -83,36 +84,4 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
