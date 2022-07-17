@@ -5,7 +5,6 @@ const userModel = require("../models/userModel");
 
 const sendMessage = asyncHandler(async (req, res) => {
   const { content, chatId } = req.body;
-  console.log(req.body);
 
   if (!content || !chatId) {
     console.log("Invalid data passed into request");
@@ -56,12 +55,10 @@ const sendMessage = asyncHandler(async (req, res) => {
       ONE[i].chat = TWO[i].chat;
     }
 
-    for (let i = 0; i < TWO.length; i++) {
-      for (let j = 0; j < TWO[i].chat[0].users.length; j++) {
-        TWO[i].chat[0].users[j] = await userModel.findOne({
-          _id: TWO[i].chat[0].users[j],
-        });
-      }
+    for (let j = 0; j < TWO[TWO.length - 1].chat[0].users.length; j++) {
+      TWO[TWO.length - 1].chat[0].users[j] = await userModel.findOne({
+        _id: TWO[TWO.length - 1].chat[0].users[j],
+      });
     }
 
     //find message._id ==== TWO[i]._id
