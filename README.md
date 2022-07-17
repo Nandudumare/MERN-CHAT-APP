@@ -34,8 +34,6 @@ Chat Application is a Full Stack Chatting App. Uses Socket.io for real time comm
 - you can toggle task between completed and not completed
 - Responsive App -->
 
-# Features
-
 ### Authenticaton
 
 ![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/login.PNG)
