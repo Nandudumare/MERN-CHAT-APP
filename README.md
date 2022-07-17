@@ -69,19 +69,47 @@ Chat Application is a Full Stack Chatting App. Uses Socket.io for real time comm
 ![](https://user-images.githubusercontent.com/97354079/179386471-34fb65ab-4c2a-4dbc-9c45-3a84f9e72254.png)
 
 
-## Deployement For Client
+## Run Locally
 
-### Getting Started with Create React App
+Clone the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```bash
+  git clone https://github.com/Nandudumare/MERN-CHAT-APP.git
+```
 
-## Available Scripts
+Go to the project directory
 
-In the project directory, you can run:
+```bash
+  cd MERN-CHAT-APP
+```
 
-### `npm start`
+Install dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+  cd client/
+  npm install
+```
+
+```bash
+  cd server/
+  npm install
+```
+
+Start the server
+
+```bash
+  cd server/
+  npm run dev
+```
+Start the Client
+
+```bash
+  cd client/
+  npm start
+```
+
+## Made By
+
+- [@Nandudumare](https://github.com/Nandudumare)
 
 
