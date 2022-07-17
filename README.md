@@ -1,4 +1,4 @@
-## Chat Application
+# Chat Application
 
 ---
 
@@ -12,7 +12,7 @@
 Chat Application is a Full Stack Chatting App. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
 </p>
 
-### Tech-Stack
+## Tech-Stack
 
 ---
 
@@ -22,7 +22,7 @@ Chat Application is a Full Stack Chatting App. Uses Socket.io for real time comm
 
 **Database:** Mongo DB
 
-### Features
+## Features
 
 ---
 
@@ -67,13 +67,6 @@ Chat Application is a Full Stack Chatting App. Uses Socket.io for real time comm
 
 ![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/profile.PNG)
 
-### Screenshots
-
----
-
-![screenshot](https://user-images.githubusercontent.com/97354079/174448474-e866e94e-e24c-4932-92c8-1d4a2b67fe57.png)
-
-![screenshot](https://user-images.githubusercontent.com/97354079/174448597-80c997c1-07ae-4053-85f9-e98d0767d98a.png)
 
 ## Deployement For Client
 
