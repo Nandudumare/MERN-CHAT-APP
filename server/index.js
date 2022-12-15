@@ -39,7 +39,7 @@ const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
     //FRONTEND LINK
-    origin: "https://mern-chat-app-oj4j.vercel.app/",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
