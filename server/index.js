@@ -40,6 +40,7 @@ const io = require("socket.io")(server, {
   cors: {
     //FRONTEND LINK
     origin: "https://mern-chat-app-oj4j.vercel.app/",
+    methods: ["GET", "POST"],
   },
 });
 
