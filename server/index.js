@@ -45,7 +45,10 @@ const io = require("socket.io")(server, {
     //FRONTEND LINK
     origin: ["*", "https://mern-chat-app-app.vercel.app"],
     methods: ["GET", "POST"],
+    credentials: true,
+    allowEIO3: true,
   },
+  transport: ["websocket"],
 });
 
 io.on("connection", (socket) => {
