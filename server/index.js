@@ -39,17 +39,34 @@ const server = app.listen(PORT, () => {
 //   res.setHeader("Access-Control-Allow-Origin", "*");
 // });
 
-const io = require("socket.io")(server, {
-  pingTimeout: 60000,
-  cors: {
-    //FRONTEND LINK
-    origin: ["*", "https://mern-chat-app-app.vercel.app"],
-    methods: ["GET", "POST"],
-    credentials: true,
-    allowEIO3: true,
-  },
-  transport: ["websocket"],
-});
+const io = require("socket.io")(
+  server,
+  {
+    origins: ["hhttps://mern-chat-app-app.vercel.app"],
+
+    handlePreflightRequest: (req, res) => {
+      res.writeHead(200, {
+        "Access-Control-Allow-Origin": "https://mern-chat-app-app.vercel.app",
+        "Access-Control-Allow-Methods": "GET,POST",
+        "Access-Control-Allow-Headers": "my-custom-header",
+        "Access-Control-Allow-Credentials": true,
+      });
+      res.end();
+    },
+  }
+
+  // {
+  // pingTimeout: 60000,
+  // cors: {
+  //   //FRONTEND LINK
+  //   origin: ["*", "https://mern-chat-app-app.vercel.app"],
+  //   methods: ["GET", "POST"],
+  //   credentials: true,
+  //   allowEIO3: true,
+  // },
+  // transport: ["websocket"],
+  // }
+);
 
 io.on("connection", (socket) => {
   console.log("connected to socket.io");
