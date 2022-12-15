@@ -46,8 +46,10 @@ const io = require("socket.io")(
     pingTimeout: 60000,
     cors: {
       //FRONTEND LINK
-      origin: ["*", "https://mern-chat-app-app.vercel.app"],
-      methods: ["GET", "POST"],
+      origin: "*",
+      methods: ["PUT", "GET", "POST", "DELETE", "OPTIONS"],
+      allowedHeaders: ["secretHeader"],
+      credentials: true,
     },
   }
 );
