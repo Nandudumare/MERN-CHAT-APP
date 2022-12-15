@@ -39,20 +39,14 @@ const server = app.listen(PORT, () => {
 //   res.setHeader("Access-Control-Allow-Origin", "*");
 // });
 
-const io = require("socket.io")(
-  server,
-
-  {
-    pingTimeout: 60000,
-    cors: {
-      //FRONTEND LINK
-      origin: "*",
-      methods: ["PUT", "GET", "POST", "DELETE", "OPTIONS"],
-      allowedHeaders: ["secretHeader"],
-      credentials: true,
-    },
-  }
-);
+const io = require("socket.io")(server, {
+  pingTimeout: 60000,
+  cors: {
+    //FRONTEND LINK
+    origin: "*",
+    methods: ["PUT", "GET", "POST", "DELETE", "OPTIONS"],
+  },
+});
 
 io.on("connection", (socket) => {
   console.log("connected to socket.io");
