@@ -25,7 +25,8 @@ import io from "socket.io-client";
 import Lottie from "react-lottie";
 import animationData from "../animation/typing.json";
 import chat from "../animation/chat.gif";
-const ENDPOINT = "https://mern-chat-app-tirr.vercel.app";
+//BACKEND LINK
+const ENDPOINT = "https://mern-chat-app-tirr.vercel.app/";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
