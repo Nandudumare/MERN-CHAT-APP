@@ -35,11 +35,15 @@ const server = app.listen(PORT, () => {
   console.log("listening on port 8080");
 });
 
+server.prependListener("request", (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+});
+
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
     //FRONTEND LINK
-    origin: "*",
+    origin: "https://mern-chat-app-oj4j.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
