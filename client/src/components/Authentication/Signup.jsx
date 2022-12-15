@@ -103,7 +103,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:8080/api/user",
+        "https://mern-chat-app-tirr.vercel.app/api/user",
         {
           name,
           email,
