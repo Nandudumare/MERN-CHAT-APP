@@ -32,7 +32,7 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 8080;
 
 const server = app.listen(PORT, () => {
-  console.log("listening on port 8080");
+  console.log(`listening on port ${PORT}`);
 });
 
 // server.prependListener("request", (req, res) => {
