@@ -28,7 +28,7 @@ const MyChats = ({ fetchAgain }) => {
       };
 
       const { data } = await axios.get(
-        "https://mern-chat-app-tirr.vercel.app/api/chat",
+        `${process.env.REACT_APP_BACK_URL}/api/chat`,
         config
       );
       console.log("data:", data);

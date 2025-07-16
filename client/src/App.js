@@ -3,7 +3,9 @@ import "./App.css";
 import ChatPage from "./pages/ChatPage";
 import HomePage from "./pages/HomePage";
 
+
 function App() {
+  
   return (
     <div className="App">
       <Routes>
@@ -13,5 +15,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

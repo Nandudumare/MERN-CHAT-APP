@@ -26,7 +26,7 @@ import Lottie from "react-lottie";
 import animationData from "../animation/typing.json";
 import chat from "../animation/chat.gif";
 //BACKEND LINK
-const ENDPOINT = "https://mern-chat-app-tirr.vercel.app/";
+const ENDPOINT = process.env.REACT_APP_BACK_URL;
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -77,7 +77,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `https://mern-chat-app-tirr.vercel.app/api/message/${selectedChat._id}`,
+        `${process.env.REACT_APP_BACK_URL}/api/message/${selectedChat._id}`,
         config
       );
       console.log("data:", data);
@@ -120,7 +120,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "https://mern-chat-app-tirr.vercel.app/api/message",
+          `${process.env.REACT_APP_BACK_URL}/api/message`,
           {
             content: newMessage,
             chatId: selectedChat,
