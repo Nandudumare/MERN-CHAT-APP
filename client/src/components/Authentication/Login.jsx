@@ -76,35 +76,43 @@ const Login = () => {
   return (
     <VStack spacing="10px">
       <FormControl id="email" isRequired>
-        <FormLabel>Email Address</FormLabel>
+        <FormLabel fontFamily={"Rubik"}>Email Address</FormLabel>
         <Input
           _placeholder={{ color: "white" }}
           value={email}
           type="email"
           variant="flushed"
+          fontFamily={"Rubik"}
           placeholder="Enter Your Email Address"
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormControl>
       <FormControl id="password" isRequired>
-        <FormLabel>Password</FormLabel>
+        <FormLabel fontFamily={"Rubik"}>Password</FormLabel>
         <InputGroup size="md">
           <Input
             value={password}
             variant="flushed"
+            fontFamily={"Rubik"}
             _placeholder={{ color: "white" }}
             onChange={(e) => setPassword(e.target.value)}
             type={show ? "text" : "password"}
             placeholder="Enter password"
           />
           <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
+            <Button
+              fontFamily={"Rubik"}
+              h="1.75rem"
+              size="sm"
+              onClick={handleClick}
+            >
               {show ? "Hide" : "Show"}
             </Button>
           </InputRightElement>
         </InputGroup>
       </FormControl>
       <button
+        fontFamily={"Rubik"}
         width="100%"
         style={{ marginTop: 15 }}
         onClick={submitHandler}
@@ -117,6 +125,7 @@ const Login = () => {
         // variant="solid"
         // colorScheme="red"
         // width="100%"
+        fontFamily={"Rubik"}
         className="btn red"
         onClick={() => {
           setEmail("guest@example.com");

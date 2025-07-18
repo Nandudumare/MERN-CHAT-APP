@@ -38,7 +38,7 @@ const HomePage = () => {
       >
         <Text
           fontSize="4xl"
-          fontFamily={"Neucha"}
+          fontFamily={"Rubik"}
           color="#efefef"
           textAlign={"center"}
         >

@@ -139,9 +139,10 @@ const Signup = () => {
   return (
     <VStack spacing="5px">
       <FormControl id="first-name" isRequired>
-        <FormLabel>Name</FormLabel>
+        <FormLabel fontFamily={"Rubik"}>Name</FormLabel>
         <Input
           variant="flushed"
+          fontFamily={"Rubik"}
           placeholder="Enter Your Name"
           required
           _placeholder={{ color: "white" }}
@@ -149,9 +150,10 @@ const Signup = () => {
         />
       </FormControl>
       <FormControl id="email" isRequired>
-        <FormLabel>Email Address</FormLabel>
+        <FormLabel fontFamily={"Rubik"}>Email Address</FormLabel>
         <Input
           type="email"
+          fontFamily={"Rubik"}
           required
           _placeholder={{ color: "white" }}
           variant="flushed"
@@ -160,27 +162,34 @@ const Signup = () => {
         />
       </FormControl>
       <FormControl id="password" isRequired>
-        <FormLabel>Password</FormLabel>
+        <FormLabel fontFamily={"Rubik"}>Password</FormLabel>
         <InputGroup size="md">
           <Input
             required
             variant="flushed"
+            fontFamily={"Rubik"}
             _placeholder={{ color: "white" }}
             type={show ? "text" : "password"}
             placeholder="Enter Password"
             onChange={(e) => setPassword(e.target.value)}
           />
           <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
+            <Button
+              h="1.75rem"
+              size="sm"
+              fontFamily={"Rubik"}
+              onClick={handleClick}
+            >
               {show ? "Hide" : "Show"}
             </Button>
           </InputRightElement>
         </InputGroup>
       </FormControl>
       <FormControl id="password" isRequired>
-        <FormLabel>Confirm Password</FormLabel>
+        <FormLabel fontFamily={"Rubik"}>Confirm Password</FormLabel>
         <InputGroup size="md">
           <Input
+            fontFamily={"Rubik"}
             required
             _placeholder={{ color: "white" }}
             variant="flushed"
@@ -189,18 +198,24 @@ const Signup = () => {
             onChange={(e) => setConfirmpassword(e.target.value)}
           />
           <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
+            <Button
+              h="1.75rem"
+              size="sm"
+              fontFamily={"Rubik"}
+              onClick={handleClick}
+            >
               {show ? "Hide" : "Show"}
             </Button>
           </InputRightElement>
         </InputGroup>
       </FormControl>
       <FormControl id="pic">
-        <FormLabel>Upload your Picture</FormLabel>
+        <FormLabel fontFamily={"Rubik"}>Upload your Picture</FormLabel>
         <Input
           type="file"
           variant="flushed"
           p={1.5}
+          fontFamily={"Rubik"}
           accept="image/*"
           onChange={(e) => postDetails(e.target.files[0])}
         />
@@ -208,6 +223,7 @@ const Signup = () => {
       <button
         // colorScheme="blue"
         // width="100%"
+        fontFamily={"Rubik"}
         className="btn"
         style={{ marginTop: 20 }}
         onClick={submitHandler}

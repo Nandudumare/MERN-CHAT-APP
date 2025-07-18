@@ -66,7 +66,7 @@ const MyChats = ({ fetchAgain }) => {
         pb={3}
         px={3}
         fontSize={{ base: "28px", md: "30px" }}
-        fontFamily={"Neucha"}
+        fontFamily={"Rubik"}
         d="flex"
         w="100%"
         justifyContent="space-between"
@@ -77,7 +77,7 @@ const MyChats = ({ fetchAgain }) => {
           <Button
             d="flex"
             bg="#f1e2e7"
-            fontFamily={"Neucha"}
+            fontFamily={"Rubik"}
             fontSize={{ base: "17px", md: "10px", lg: "17px" }}
             rightIcon={<AddIcon />}
           >
@@ -127,13 +127,13 @@ const MyChats = ({ fetchAgain }) => {
                   />
                 </div>
                 <Box px={3} py={0.5}>
-                  <Text fontFamily={"Neucha"}>
+                  <Text fontFamily={"Rubik"}>
                     {!chat.isGroupChat
                       ? getSender(loggedUser, chat.users)
                       : chat.chatName}
                   </Text>
                   {chat.latestMessage[0] && (
-                    <Text fontSize="xs" fontFamily={"Neucha"}>
+                    <Text fontSize="xs" fontFamily={"Rubik"}>
                       <b>{chat.latestMessage[0].sender.name} : </b>
                       {chat.latestMessage[0].content.length > 50
                         ? chat.latestMessage[0].content.substring(0, 51) + "..."

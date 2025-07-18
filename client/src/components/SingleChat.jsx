@@ -189,7 +189,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             pb={3}
             px={2}
             w="100%"
-            fontFamily="Neucha"
+            fontFamily={"Rubik"}
             d="flex"
             justifyContent={{ base: "space-between" }}
             alignItems="center"
@@ -272,6 +272,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                   placeholder="Enter a message..."
                   value={newMessage}
                   onChange={typingHandler}
+                  fontFamily={"Rubik"}
                 />
                 <InputRightElement
                   pointerEvents="pointer"
@@ -285,6 +286,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                       }}
                       height={10}
                       onClick={sendMessage}
+                      fontFamily={"Rubik"}
                     >
                       Send
                     </Button>
@@ -311,7 +313,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
               background="#f1e2e7"
             />
           </Box>
-          <Text fontSize="3xl" pb={3} fontFamily="Neucha">
+          <Text fontSize="3xl" pb={3} fontFamily={"Rubik"}>
             Click on a user to start chatting
           </Text>
         </Box>

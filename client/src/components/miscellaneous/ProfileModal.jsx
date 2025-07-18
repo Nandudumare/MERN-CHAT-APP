@@ -30,9 +30,9 @@ const ProfileModal = ({ user, children }) => {
         <ModalContent h="410px" bg="#f1e2e7">
           <ModalHeader
             fontSize="40px"
-            fontFamily="Work sans"
             d="flex"
             justifyContent="center"
+            fontFamily={"Rubik"}
           >
             {user.name}
           </ModalHeader>
@@ -49,15 +49,17 @@ const ProfileModal = ({ user, children }) => {
               src={user.pic}
               alt={user.name}
             />
-            <Text
-              fontSize={{ base: "28px", md: "30px" }}
-              fontFamily="Work sans"
-            >
+            <Text fontSize={{ base: "28px", md: "30px" }} fontFamily={"Rubik"}>
               Email: {user.email}
             </Text>
           </ModalBody>
           <ModalFooter>
-            <Button bg="#f1e2e7" border={"1px solid black"} onClick={onClose}>
+            <Button
+              fontFamily={"Rubik"}
+              bg="#f1e2e7"
+              border={"1px solid black"}
+              onClick={onClose}
+            >
               Close
             </Button>
           </ModalFooter>

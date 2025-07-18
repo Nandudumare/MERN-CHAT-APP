@@ -140,12 +140,16 @@ const SideDrawer = () => {
         <Tooltip label="Search Users to chat" hasArrow placement="bottom-end">
           <Button variant="ghost" onClick={onOpen}>
             <i className="fas fa-search"></i>
-            <Text d={{ base: "none", md: "flex" }} px={"4"} fontFamily="Neucha">
+            <Text
+              d={{ base: "none", md: "flex" }}
+              px={"4"}
+              fontFamily={"Rubik"}
+            >
               Search User
             </Text>
           </Button>
         </Tooltip>
-        <Text fontSize="2xl" fontFamily="Neucha">
+        <Text fontSize="2xl" fontFamily={"Rubik"}>
           Chat-Application
         </Text>
         <div>
@@ -158,7 +162,13 @@ const SideDrawer = () => {
               <BellIcon fontSize="2xl" m={1} />
             </MenuButton>
             <MenuList pl={2} bg="#f1e2e7">
-              {!notification.length && "No New Messages"}
+              <Text
+                d={{ base: "none", md: "flex" }}
+                px={"4"}
+                fontFamily={"Rubik"}
+              >
+                {!notification.length && "No New Messages"}
+              </Text>
               {notification.map((notif) => (
                 <MenuItem
                   bg="#f1e2e7"
@@ -168,12 +178,18 @@ const SideDrawer = () => {
                     setNotification(notification.filter((n) => n !== notif));
                   }}
                 >
-                  {notif.chat[0].isGroupChat
-                    ? `New Message in ${notif.chat[0].chatName}`
-                    : `New Message from ${getSender(
-                        user,
-                        notif.chat[0].users
-                      )}`}
+                  <Text
+                    d={{ base: "none", md: "flex" }}
+                    px={"4"}
+                    fontFamily={"Rubik"}
+                  >
+                    {notif.chat[0].isGroupChat
+                      ? `New Message in ${notif.chat[0].chatName}`
+                      : `New Message from ${getSender(
+                          user,
+                          notif.chat[0].users
+                        )}`}
+                  </Text>
                 </MenuItem>
               ))}
             </MenuList>
@@ -198,7 +214,7 @@ const SideDrawer = () => {
                     background: "#ff4f5b",
                     color: "white",
                   }}
-                  fontFamily={"Neucha"}
+                  fontFamily={"Rubik"}
                 >
                   My Profile
                 </MenuItem>
@@ -210,7 +226,7 @@ const SideDrawer = () => {
                   color: "white",
                 }}
                 onClick={logoutHandler}
-                fontFamily={"Neucha"}
+                fontFamily={"Rubik"}
               >
                 Logout
               </MenuItem>
@@ -225,6 +241,7 @@ const SideDrawer = () => {
           <DrawerBody>
             <Box d="flex" pb={2}>
               <Input
+                fontFamily={"Rubik"}
                 placeholder="Search by name or email"
                 mr={2}
                 value={search}
@@ -235,6 +252,7 @@ const SideDrawer = () => {
                 border="1px solid black"
                 bg="#f1e2e7"
                 onClick={handleSearch}
+                fontFamily={"Rubik"}
               >
                 Go
               </Button>

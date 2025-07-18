@@ -215,9 +215,9 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
         <ModalContent bg="#f1e2e7">
           <ModalHeader
             fontSize="35px"
-            fontFamily="Work sans"
             d="flex"
             justifyContent="center"
+            fontFamily={"Rubik"}
           >
             {selectedChat.chatName}
           </ModalHeader>
@@ -236,6 +236,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
             </Box>
             <FormControl d="flex">
               <Input
+                fontFamily={"Rubik"}
                 placeholder="Chat Name"
                 mb={3}
                 outline={"1px solid black"}
@@ -248,6 +249,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
                 ml={1}
                 isLoading={renameloading}
                 onClick={handleRename}
+                fontFamily={"Rubik"}
               >
                 Update
               </Button>
@@ -258,6 +260,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
                 mb={1}
                 outline={"1px solid black"}
                 onChange={(e) => handleSearch(e.target.value)}
+                fontFamily={"Rubik"}
               />
             </FormControl>
 
@@ -274,7 +277,11 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
             )}
           </ModalBody>
           <ModalFooter>
-            <Button onClick={() => handleRemove(user)} colorScheme="red">
+            <Button
+              fontFamily={"Rubik"}
+              onClick={() => handleRemove(user)}
+              colorScheme="red"
+            >
               Leave Group
             </Button>
           </ModalFooter>

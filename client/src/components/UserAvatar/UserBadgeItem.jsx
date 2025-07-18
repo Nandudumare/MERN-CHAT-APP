@@ -14,6 +14,7 @@ const UserBadgeItem = ({ user, handleFunction, admin }) => {
       colorScheme="purple"
       cursor="pointer"
       onClick={handleFunction}
+      fontFamily={"Rubik"}
     >
       {user.name}
       {admin === user._id && <span> (Admin)</span>}
