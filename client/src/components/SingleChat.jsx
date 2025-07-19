@@ -24,7 +24,9 @@ import "./styles.css";
 import io from "socket.io-client";
 import Lottie from "react-lottie";
 import animationData from "../animation/typing.json";
-import chat from "../animation/chat.gif";
+// import chat from "../animation/chat.gif";
+import chat from "../animation/chat.png";
+import { chatColors } from "../colors";
 //BACKEND LINK
 const ENDPOINT = process.env.REACT_APP_BACK_URL;
 var socket, selectedChatCompare;
@@ -223,7 +225,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             flexDir="column"
             justifyContent="flex-end"
             p={3}
-            bg="#ff4f5b"
+            bg={chatColors.dusty_rose}
             w="100%"
             h="100%"
             borderRadius="lg"
@@ -268,11 +270,12 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
               <InputGroup>
                 <Input
                   variant="flushed"
-                  bg="#ff4f5b"
+                  bg={chatColors.dusty_rose}
                   placeholder="Enter a message..."
                   value={newMessage}
                   onChange={typingHandler}
                   fontFamily={"Rubik"}
+                  _placeholder={{ color: "white" }}
                 />
                 <InputRightElement
                   pointerEvents="pointer"
@@ -303,11 +306,12 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
           alignItems="center"
           justifyContent="center"
           h="100%"
+          gap="10"
         >
           <Box>
             <img
-              height="450"
-              width="450"
+              height="300"
+              width="300"
               src={chat}
               alt=""
               background="#f1e2e7"

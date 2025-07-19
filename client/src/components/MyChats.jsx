@@ -10,6 +10,7 @@ import { Avatar, Button } from "@chakra-ui/react";
 import { ChatContext } from "../context/ChatProvider";
 import GroupChatModal from "./miscellaneous/GroupChatModal";
 import { Flex } from "@chakra-ui/layout";
+import { chatColors } from "../colors";
 
 const MyChats = ({ fetchAgain }) => {
   const [loggedUser, setLoggedUser] = useState();
@@ -57,7 +58,7 @@ const MyChats = ({ fetchAgain }) => {
       flexDir="column"
       alignItems="center"
       p={3}
-      bg="#f1e2e7"
+      bg={chatColors.periwinkle}
       w={{ base: "100%", md: "31%" }}
       borderRadius="lg"
       borderWidth="1px"
@@ -76,7 +77,7 @@ const MyChats = ({ fetchAgain }) => {
         <GroupChatModal>
           <Button
             d="flex"
-            bg="#f1e2e7"
+            bg={chatColors.periwinkle}
             fontFamily={"Rubik"}
             fontSize={{ base: "17px", md: "10px", lg: "17px" }}
             rightIcon={<AddIcon />}
@@ -89,12 +90,11 @@ const MyChats = ({ fetchAgain }) => {
         d="flex"
         flexDir="column"
         p={3}
-        bg="#F8F8F8"
         w="100%"
         h="100%"
         borderRadius="lg"
         overflowY="hidden"
-        backgroundColor={"#ff4f5b"}
+        bg={chatColors.dusty_rose}
       >
         {chats ? (
           <Stack overflowY="scroll">
@@ -104,10 +104,9 @@ const MyChats = ({ fetchAgain }) => {
                 cursor="pointer"
                 bg={
                   selectedChat === chat
-                    ? "#43449c"
-                    : "rgba( 255, 255, 255, 0.15 )"
+                    ? chatColors.light_lavender
+                    : "rgba(255, 255, 255, 0.15)"
                 }
-                color={selectedChat === chat ? "white" : "black"}
                 px={3}
                 py={2}
                 backdropFilter="blur( 3px )"

@@ -2,15 +2,16 @@ import { Avatar } from "@chakra-ui/avatar";
 import { Box, Text } from "@chakra-ui/layout";
 import { useContext } from "react";
 import { ChatContext } from "../../context/ChatProvider";
+import { chatColors } from "../../colors";
 
 const UserListItem = ({ user, handleFunction }) => {
   return (
     <Box
       onClick={handleFunction}
       cursor="pointer"
-      bg="#ff4f5b"
+      bg={chatColors.dusty_rose}
       _hover={{
-        background: "#43449c ",
+        background: chatColors.slate_blue,
         color: "white",
       }}
       w="100%"

@@ -33,6 +33,7 @@ import UserListItem from "../UserAvatar/UserListItem";
 import NotificationBadge from "react-notification-badge";
 import { Effect } from "react-notification-badge";
 import { getSender } from "../../config/ChatLogics";
+import { chatColors } from "../../colors";
 
 const SideDrawer = () => {
   const {
@@ -132,12 +133,17 @@ const SideDrawer = () => {
         d="flex"
         justifyContent="space-between"
         alignItems="center"
-        bg="#f1e2e7"
+        bg={chatColors.periwinkle}
         w="100%"
         p="5px 10px 5px 10px"
-        borderWidth="5px"
+        borderWidth="2px"
       >
-        <Tooltip label="Search Users to chat" hasArrow placement="bottom-end">
+        <Tooltip
+          fontFamily={"Rubik"}
+          label="Search Users to chat"
+          hasArrow
+          placement="bottom-end"
+        >
           <Button variant="ghost" onClick={onOpen}>
             <i className="fas fa-search"></i>
             <Text
@@ -197,7 +203,7 @@ const SideDrawer = () => {
           <Menu>
             <MenuButton
               as={Button}
-              bg="#f1e2e7"
+              bg={chatColors.periwinkle}
               rightIcon={<ChevronDownIcon />}
             >
               <Avatar
@@ -207,11 +213,11 @@ const SideDrawer = () => {
                 src={user.pic}
               />
             </MenuButton>
-            <MenuList bg="#f1e2e7">
+            <MenuList bg={chatColors.periwinkle}>
               <ProfileModal user={user}>
                 <MenuItem
                   _hover={{
-                    background: "#ff4f5b",
+                    background: chatColors.dusty_rose,
                     color: "white",
                   }}
                   fontFamily={"Rubik"}
@@ -222,7 +228,7 @@ const SideDrawer = () => {
               <MenuDivider />
               <MenuItem
                 _hover={{
-                  background: "#ff4f5b",
+                  background: chatColors.dusty_rose,
                   color: "white",
                 }}
                 onClick={logoutHandler}
@@ -236,7 +242,7 @@ const SideDrawer = () => {
       </Box>
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <DrawerContent bg="#f1e2e7">
+        <DrawerContent bg={chatColors.periwinkle}>
           <DrawerHeader borderBottomWidth="1px">Search Users</DrawerHeader>
           <DrawerBody>
             <Box d="flex" pb={2}>
@@ -250,7 +256,7 @@ const SideDrawer = () => {
               />
               <Button
                 border="1px solid black"
-                bg="#f1e2e7"
+                bg={chatColors.periwinkle}
                 onClick={handleSearch}
                 fontFamily={"Rubik"}
               >
